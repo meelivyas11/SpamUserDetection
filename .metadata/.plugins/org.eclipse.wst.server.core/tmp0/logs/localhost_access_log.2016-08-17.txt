@@ -1,0 +1,12 @@
+127.0.0.1 - - [17/Aug/2016:16:48:37 -0400] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [17/Aug/2016:16:48:39 -0400] "GET /SpamUserDetector-Web/ HTTP/1.1" 200 1424
+0:0:0:0:0:0:0:1 - - [17/Aug/2016:16:48:55 -0400] "POST /SpamUserDetector-Web/ShowAppletServlet HTTP/1.1" 200 1426
+0:0:0:0:0:0:0:1 - - [17/Aug/2016:16:49:25 -0400] "POST /SpamUserDetector-Web/ShowAppletServlet HTTP/1.1" 200 1426
+0:0:0:0:0:0:0:1 - - [17/Aug/2016:16:51:33 -0400] "POST /SpamUserDetector-Web/InitializerServlet HTTP/1.1" 200 1472
+0:0:0:0:0:0:0:1 - - [17/Aug/2016:16:56:38 -0400] "POST /SpamUserDetector-Web/ShowAppletServlet HTTP/1.1" 200 1472
+127.0.0.1 - - [17/Aug/2016:16:58:38 -0400] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [17/Aug/2016:16:58:56 -0400] "GET /SpamUserDetector-Web HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [17/Aug/2016:16:58:56 -0400] "GET /SpamUserDetector-Web/ HTTP/1.1" 200 1424
+0:0:0:0:0:0:0:1 - - [17/Aug/2016:16:59:46 -0400] "POST /SpamUserDetector-Web/ShowAppletServlet HTTP/1.1" 200 1587
+0:0:0:0:0:0:0:1 - - [17/Aug/2016:17:00:04 -0400] "POST /SpamUserDetector-Web/ShowAppletServlet HTTP/1.1" 200 1426
+0:0:0:0:0:0:0:1 - - [17/Aug/2016:17:00:26 -0400] "POST /SpamUserDetector-Web/ShowAppletServlet HTTP/1.1" 200 1426
