@@ -223,7 +223,7 @@ public class TreatTestTweets {
         {
         	temp++;
         	stringTokenizer.nextToken();
-        	if (temp==1)
+        	if (temp==1 && stringTokenizer.hasMoreElements())
         	{
         		writer.write(stringTokenizer.nextToken()); 
         		writer.write("\n");
@@ -247,6 +247,7 @@ public class TreatTestTweets {
 		System.out.println("in MatrixTweetMethod");
 		//Counting the total number of words
 	    File file = new File(VocabFilePath);
+	    file.createNewFile();
 	    Scanner sc = new Scanner(new FileInputStream(file));
 	    int count=0;
 	    while(sc.hasNext()){
@@ -276,6 +277,8 @@ public class TreatTestTweets {
 	    int Id =0;
 	    String fileName1 = FilePathData.getAbsoluteDiskPath()+"TrainingDataSet/ProcessedTweets/MatrixFiles/MatrixFileTestFinal.csv";
     	//FileNumCount++;
+	    File f = new File(fileName1);
+	    f.createNewFile();
 		BufferedWriter bw = new BufferedWriter(new FileWriter(fileName1, true));
 		
 		bw.write("ID" + ",");
