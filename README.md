@@ -21,6 +21,7 @@
 ### Running
  - Start the Server
  - Open `http://localhost:8080/SpamUserDetector-Web/` from your web browser
- - Browse `ApplicationTestTweets.tsv` file from the Repository and click `Start View`
+ - Enter the Username (`admin`) and Password (`admin`) to initialize the Learner
+ - Now the learner in all set to identify the spamed users, So choose `ApplicationTestTweets.tsv` file from the Repository and click `Start View`
  
  
