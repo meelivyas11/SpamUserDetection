@@ -43,7 +43,7 @@ public class InitializerServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		RequestDispatcher rd = null;
 	
-		if(username.equals("tempAdmin") & password.equals("tempAdmin"))
+		if(username.equals("admin") & password.equals("admin"))
 		{
 			ServletContext servletContext = request.getSession().getServletContext();
 			String absoluteDiskPath = servletContext.getRealPath(".");
