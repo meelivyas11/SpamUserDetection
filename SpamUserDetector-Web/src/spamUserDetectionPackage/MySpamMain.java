@@ -51,8 +51,7 @@ public class MySpamMain {
 		// Proper GUI for Entering the Test Tweet Location
 		// Test Particular Tweets Given by the User
 		String MatrixLabledTrain = FilePathData.getAbsoluteDiskPath()+ "TrainingDataSet/ProcessedTweets/MatrixFiles/MatrixFileLabledTrain.arff";
-		File MatrixLabled = new File(MatrixLabledTrain);
-		MatrixLabled.createNewFile();
+		
 		// String TweetTestFileName = TestTweetFilePath.getText();
 		TreatTestTweets treatTweetsObj = new TreatTestTweets();
 		try {
