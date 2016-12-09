@@ -1,5 +1,7 @@
 package spamUserDetectionPackage;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class MySpamMain {
@@ -40,7 +42,7 @@ public class MySpamMain {
 
 	}
 
-	public String getSpamUserNames(String TweetTestFileName) {
+	public String getSpamUserNames(String TweetTestFileName) throws IOException {
 		System.out.println("In getSpamUserNames method ");
 		final int Declare_SpamUser_Count = 1;
 		String spamUserNames = "";
@@ -49,6 +51,8 @@ public class MySpamMain {
 		// Proper GUI for Entering the Test Tweet Location
 		// Test Particular Tweets Given by the User
 		String MatrixLabledTrain = FilePathData.getAbsoluteDiskPath()+ "TrainingDataSet/ProcessedTweets/MatrixFiles/MatrixFileLabledTrain.arff";
+		File MatrixLabled = new File(MatrixLabledTrain);
+		MatrixLabled.createNewFile();
 		// String TweetTestFileName = TestTweetFilePath.getText();
 		TreatTestTweets treatTweetsObj = new TreatTestTweets();
 		try {

@@ -42,7 +42,7 @@ public class TreatTestTweets {
 			csv_Delete2.delete();
 		
 		//Seperate the Tweets and User
-		String fileNameTweets =	CleanTweetMethod(TweetTestFileName, VocabFilePath);
+		String fileNameTweets =	CleanTweetMethod(TweetTestFileName);
       		
 		//Create a Matrix - Csv File
 		MatrixTweetMethod(fileNameTweets, VocabFilePath);
@@ -196,7 +196,7 @@ public class TreatTestTweets {
 	    }
 	    return FinalSpamList;
 	}
-	public String CleanTweetMethod(String TweetTestFileName, String VocabFilePath) throws Exception 
+	public String CleanTweetMethod(String TweetTestFileName) throws Exception 
 	{
 		System.out.println("in CleanTweetMethod");
 		String fileNameTweets = FilePathData.getAbsoluteDiskPath()+"TrainingDataSet/ProcessedTweets/TweetsTest.tsv";
@@ -247,7 +247,6 @@ public class TreatTestTweets {
 		System.out.println("in MatrixTweetMethod");
 		//Counting the total number of words
 	    File file = new File(VocabFilePath);
-	    file.createNewFile();
 	    Scanner sc = new Scanner(new FileInputStream(file));
 	    int count=0;
 	    while(sc.hasNext()){
@@ -279,7 +278,7 @@ public class TreatTestTweets {
     	//FileNumCount++;
 	    File f = new File(fileName1);
 	    f.createNewFile();
-		BufferedWriter bw = new BufferedWriter(new FileWriter(fileName1, true));
+	    BufferedWriter bw = new BufferedWriter(new FileWriter(f));
 		
 		bw.write("ID" + ",");
 	    for(int i=0; i<WordsArray.length; i++ )
@@ -341,7 +340,7 @@ public void Convert_CSV_to_Arff_Test() throws IOException
 				String ArffFileName = FilePathData.getAbsoluteDiskPath()+"TrainingDataSet/ProcessedTweets/MatrixFiles/MatrixFileTestFinal.arff";
 				
 				CSVLoader loader = new CSVLoader();
-			    loader.setSource(new File(CsvFileName));
+				loader.setSource(new File(CsvFileName));
 			    Instances data = loader.getDataSet();
 
 			    ArffSaver saver = new ArffSaver();
