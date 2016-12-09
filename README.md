@@ -1,5 +1,6 @@
-# Spam User Detection
+# What is it?
 
+# How do I set up?
 ## Software Requirements
  - Git Bash: https://git-scm.com/
  - Eclipse
@@ -13,7 +14,7 @@
  - Create a new `Apache Tomcat v8.0` server
  - Clean and Build the Project
   
-## Running the Project
+# How do I use it?
  - Start the Server
  - Open `http://localhost:8080/SpamUserDetector-Web/` from your web browser
  - Enter the Username (`admin`) and Password (`admin`) to initialize the Learner
