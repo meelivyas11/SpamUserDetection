@@ -10,11 +10,10 @@
 ### Download the Code
  - Clone the repository using `git clone https://github.com/meelivyas11/SpamUserDetection.git` from Git Bash
  - Open the repository 'SpamUserDetection' from eclipse IDE
- - Import 'SpamUserDetector-Web' Project (`File->Import->General->Existing Project into Workspace`) from eclipse IDE if it is not present
+ - Import 'SpamUserDetector-Web' Project (`File->Import->General->Existing Project into Workspace`) from eclipse IDE
  
 ### Build
-  - Remove the existing external jars and re-add them from `SpamUserDetector-Web Properties -> Java Build Path` 
-    <b>Note: Required Jars are present repository `Jars` folder </b>
+  - Resolve the build path erros by re-adding the jars present in `Jars` folder of the repository
   - Create a new `Apache Tomcat v8.0` server
   - Clean and Build the Project
   
