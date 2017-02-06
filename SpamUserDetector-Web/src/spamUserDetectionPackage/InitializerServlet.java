@@ -51,7 +51,7 @@ public class InitializerServlet extends HttpServlet {
 
 			MySpamMain m = new MySpamMain();
 			m.initialSetup();
-	    	session.setAttribute("InitializationStatus", "Initialization Done");
+	    	session.setAttribute("InitializationStatus", "Initialization successful!!");
 		}
 		else
 		{
